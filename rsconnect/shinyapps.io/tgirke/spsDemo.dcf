@@ -1,0 +1,12 @@
+name: spsDemo
+title: spsDemo
+username:
+account: tgirke
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4033742
+bundleId: 4521679
+url: https://tgirke.shinyapps.io/spsDemo/
+when: 1619459762.70851
+asMultiple: FALSE
+asStatic: FALSE
