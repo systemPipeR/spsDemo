@@ -3,8 +3,12 @@
 This is the repository for our Shiny Contest submission.
 
 ## What is systemPipeShiny 
-systemPipeShiny (SPS) is a web application for interactive data analysis workflow management and a framework
-for downstream data visualization. 
+_systemPipeShiny_ (SPS) is a Shiny application for interactive data analysis workflow 
+management and a framework for downstream data visualization. SPS allows non-R users, 
+such as experimentalists, to design, control, execute and visualize data analysis 
+workflows interactively without requiring knowledge of R. Moreover, SPS has 
+been designed as a general purpose framework to allow users perform deep customization 
+and add their own components.
 
 
 
