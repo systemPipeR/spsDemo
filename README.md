@@ -1,6 +1,7 @@
 # spsDemo for Shiny Contest <img src="https://github.com/systemPipeR/systemPipeShiny-book/blob/master/img/sps.png?raw=true" align="right" height="139" />
 
-This is the repository for our Shiny Contest submission.
+This is the repository for Shiny Contest submission. This repository contains 
+code for the default deployment of systemPipeShiny. 
 
 ## What is systemPipeShiny 
 _systemPipeShiny_ (SPS) is a set of R/Bioconductor packages that provides a Shiny 
@@ -54,8 +55,8 @@ and add their own components.
   Easy-to-user methods and templates to create your own interactive tutorials
 - [Detailed debugging](https://systempipe.org/sps/adv_features/debug/):
   options to turn on verbose logging and traceback messages.
-      - [Duel-end logging](https://systempipe.org/sps/dev/spscomps/server/#shinycatch): 
-        Exceptions handling with logging on both user-end and server-end. 
+    - [Duel-end logging](https://systempipe.org/sps/dev/spscomps/server/#shinycatch): 
+      Exceptions handling with logging on both user-end and server-end. 
 - [Deploy-ready](https://systempipe.org/sps/deploy/):
   When you initialize a SPS project, the app is deploy-ready. You can deploy it 
   to Shiny servers like _shinyapps.io_ as soon as the project is created. 
@@ -71,29 +72,70 @@ one can apply SPS as framework on any type of data analysis and visualization.
 
 
 ## About this demo
-The submission demo is only a small part of what SPS can do (defaults). To view
+The submission demo link is only a small part of what SPS can do (defaults). To view
 how the app differs under different options, try these additional demos:
 
 | Type and link| option changed | notes |
 | --- | --- | --- |
-| [Default full installation](https://tgirke.shinyapps.io/systemPipeShiny/) | [See installation](#installation) | full app |
-| [Minimum installation](https://tgirke.shinyapps.io/systemPipeShiny/) | [See installation](#installation) | no modules installed |
+| [Default full installation](https://tgirke.shinyapps.io/systemPipeShiny/) | [See installation](#installation) | default full app, may take longer (~15s) to load |
+| [Minimum installation](https://tgirke.shinyapps.io/systemPipeShiny_min/) | [See installation](#installation) | no modules installed |
 | [Login enabled](https://tgirke.shinyapps.io/systemPipeShiny_loading/) | `login_screen = TRUE; login_theme = "empty"` | no modules installed |
 | [Login and login themes](https://tgirke.shinyapps.io/systemPipeShiny_loading_theme/) | `login_screen = TRUE; login_theme = "random"` | no modules installed |
-| [App admin page](https://tgirke.shinyapps.io/systemPipeShiny_loading/?admin) | `admin_page = TRUE` | or simply add "?admin" to the end of URL of demos |
+| [App admin page](https://tgirke.shinyapps.io/systemPipeShiny_loading/?admin) | `admin_page = TRUE` | use the link or simply add "?admin" to the end of URL of any demos |
 
+For the login required demos, the app account name is **"user"** password **"user"**.
 
+For the admin login, account name **"admin"**, password **"admin"**.
 
+**Please DO NOT delete or change password when you are trying the admin features.**
+Although _shinyapps.io_ will reset the app once a while, this will affect other people 
+who are viewing the demo simultaneously. 
 
+## Installation
+Conduct our [Github README](https://github.com/systemPipeR/systemPipeShiny) 
+or [website](https://systempipe.org/sps/install/) for details.
 
+SPS is under heavy development, we recommend you to install the Github version 
+for the latest features. 
 
+## Important Links:
 
+- [Website and user manual](https://systempipe.org/sps/)
+- [Github and package source code](https://github.com/systemPipeR/systemPipeShiny)
+- [Bioconductor](http://bioconductor.org/packages/release/bioc/html/systemPipeShiny.html)
+- [Deploy Example](https://github.com/systemPipeR/spsDemo)
 
+## Screenshots of SPS
 
+##### Loading screens
+![loading screens](https://systempipe.org/sps/adv_features/login_theme.gif)
 
+##### Workflow module
 
+![WF](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/wf_main.png?raw=true)
 
+##### Workflow Execution
+![WF run](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/wf_run.png?raw=true)
 
+##### RNASeq module
+![RNASeq module](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/rnaseq_deg.png?raw=true)
 
+![RNASeq module](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/rnaseq_heatmap.png?raw=true)
+
+##### Canvas 
+![canvas](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/canvas.png?raw=true)
+
+##### Canvas 
+![canvas](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/canvas.png?raw=true)
+
+##### Admin
+![Admin](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/admin_login.png?raw=true)
+
+![Admin](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/admin_server_info.png?raw=true)
+
+![Admin](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/admin_user_control.png?raw=true)
+
+##### Debugging
+![Debugging](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/logging.png?raw=true)
 
 
