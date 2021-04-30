@@ -71,8 +71,8 @@ biological/bioinformatic focused. However, with the proper configuration,
 one can apply SPS as framework on any type of data analysis and visualization.
 
 
-## About this demo
-The submission demo link is only a small part of what SPS can do (defaults). To view
+## About this submission
+The submission demo link is only a **small part** of what SPS can do (defaults). To view
 how the app differs under different options, try these additional demos:
 
 | Type and link| option changed | notes |
@@ -104,6 +104,14 @@ for the latest features.
 - [Github and package source code](https://github.com/systemPipeR/systemPipeShiny)
 - [Bioconductor](http://bioconductor.org/packages/release/bioc/html/systemPipeShiny.html)
 - [Deploy Example](https://github.com/systemPipeR/spsDemo)
+
+## About the RStudio Cloud project
+The RStudio Cloud project associated with this submission does not have Workflow 
+and RNAseq module installed. These two modules depends heavily on some Bioconductor 
+packages that require more than 1GB of RAM to install and to load, which is not 
+available for a typical free account. If you have an advanced account and want to 
+try these two modules. Follow the app start-up message to install packages and restart 
+the app to load the modules. 
 
 ## Screenshots of SPS
 
@@ -137,5 +145,9 @@ for the latest features.
 
 ##### Debugging
 ![Debugging](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/logging.png?raw=true)
+
+## Contributors
+Le Zhang, Daniela Cassol, Ponmathi Ramasamy, Jianhai Zhang, Gordon Mosher & Thomas Girke
+
 
 
