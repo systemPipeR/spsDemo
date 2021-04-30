@@ -107,7 +107,7 @@ for the latest features.
 
 ## About the RStudio Cloud project
 The RStudio Cloud project associated with this submission does not have Workflow 
-and RNAseq module installed. These two modules depends heavily on some Bioconductor 
+and RNAseq module installed. These two modules depend heavily on some Bioconductor 
 packages that require more than 1GB of RAM to install and to load, which is not 
 available for a typical free account. If you have an advanced account and want to 
 try these two modules. Follow the app start-up message to install packages and restart 
