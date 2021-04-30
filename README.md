@@ -5,7 +5,7 @@ code for the default deployment of systemPipeShiny.
 
 To deploy the same app, first [install systemPipeShiny](https://systempipe.org/sps/install/).
 Then, it should be ready to go. If you need to change some app options and settings, 
-all you need is to modify the `global.R` file and read our [manual](https://systempipe.org/sps/)  
+all you need is to modify the `global.R` file and read our [manual](https://systempipe.org/sps/adv_features/config/)  
 for details. 
 
 ## What is systemPipeShiny 
