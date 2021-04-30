@@ -108,7 +108,7 @@ for the latest features.
 ## Screenshots of SPS
 
 ##### Loading screens
-![loading screens](https://systempipe.org/sps/adv_features/login_theme.gif)
+![loading screens](https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/sps/img/loading_theme.gif?raw=true)
 
 ##### Workflow module
 
