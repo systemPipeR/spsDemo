@@ -3,10 +3,15 @@
 This is the repository for Shiny Contest submission. This repository contains 
 code for the default deployment of systemPipeShiny. 
 
+To deploy the same app, first [install systemPipeShiny](https://systempipe.org/sps/install/).
+Then, it should be ready to go. If you need to change some app options and settings, 
+all you need is to modify the `global.R` file and read our [manual](https://systempipe.org/sps/)  
+for details. 
+
 ## What is systemPipeShiny 
-_systemPipeShiny_ (SPS) is a set of R/Bioconductor packages that provides a Shiny 
+_systemPipeShiny_ (SPS) is an R/Bioconductor package that provides a Shiny 
 application for interactive data analysis workflow 
-management and a framework for downstream data visualization. SPS allows non-R users, 
+management and downstream data visualization. SPS allows non-R users, 
 such as experimentalists, to design, control, execute and visualize data analysis 
 workflows interactively without requiring knowledge of R. Moreover, SPS has 
 been designed as a general purpose framework to allow users perform deep customization 
@@ -19,7 +24,7 @@ and add their own components.
 - Three powerful default modules:
     - [Workflow](https://systempipe.org/sps/modules/workflow/): 
       use [systemPipeR](https://systempipe.org/sp/) (SPR) as backend to 
-      interactively generate, desgin, and run workflows. Current templates 
+      interactively generate, design, and run workflows. Current templates 
       are biological-centric, but as a workflow environment, SPR can adapt to any 
       type of data analysis workflows.
     - [RNAseq](https://systempipe.org/sps/modules/rnaseq/): 
@@ -29,23 +34,25 @@ and add their own components.
     - [Quick ggplot](https://systempipe.org/sps/modules/ggplot/): 
       To make a ggplot within a few mouse clicks with any kind of 
       tabular data you upload. 
+    - More modules in the future...
 - [Extendable](https://systempipe.org/sps/adv_features/tabs/): 
   users are able to add their own components to the dashboard as individual "tabs". 
     - Different templates that satisfy both beginners and advanced developers
         - Simple: high level wrappers, you only need to focus on plotting code, no Shiny 
           development knowledge is required.
-        - Full: full Shiny code, for advanced users, customize everything on the tab.
+        - Full: full Shiny code, for advanced users, customize everything of the tab.
 - [Canvas](https://systempipe.org/sps/canvas/): A workbench for interactive quick image editing
     - Communicates with all plot options on other tabs, take screenshots of them and 
       send to this tool for further image editing.
-    - Combine/compare different plots and add annotations.
+    - Combine/compare different plots, add annotations and make a scientific figure.
     - Drag to upload your own images. 
 - Fully customizable: change almost everything of the default app
     - [Load/unload certain tabs](https://systempipe.org/sps/adv_features/displaytabs/)
     - [Overwrite default tabs](https://systempipe.org/sps/adv_features/overwritetabs/)
     - [App title/ logo](https://systempipe.org/sps/adv_features/other_customizations/)
+    - and more...
 - [Security and admin](https://systempipe.org/sps/adv_features/login/):
-    - Options to turn on login feature with interactive loading screens
+    - Options to turn on login feature with interactive loading screens that users can play with
     - User defined secret url for admin page
         - View real-time app analytics
         - Control app accounts interactively
