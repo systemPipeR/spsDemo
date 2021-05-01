@@ -9,7 +9,8 @@ all you need is to modify the `global.R` file and read our [manual](https://syst
 for details. 
 
 ## What is systemPipeShiny 
-_systemPipeShiny_ (SPS) is an R/Bioconductor package that provides a Shiny 
+[_systemPipeShiny_ (SPS)]((https://systempipe.org/sps/) 
+is an R/Bioconductor package that provides a Shiny 
 application for interactive data analysis workflow 
 management and downstream data visualization. SPS allows non-R users, 
 such as experimentalists, to design, control, execute and visualize data analysis 
