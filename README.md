@@ -18,11 +18,12 @@ workflows interactively without requiring knowledge of R. Moreover, SPS has
 been designed as a general purpose framework to allow users to perform deep customization 
 and add their own components.
 
-## Key features
-
 ![design](https://systempipe.org/sps/img/sps_structure.png)
 
 Figure 1. The desgin of SPS
+
+SPS main app is design with a dashboard-like UI. Each core components are 
+## Key features
 
 - Three powerful default modules:
     - [Workflow](https://systempipe.org/sps/modules/workflow/): 
@@ -44,6 +45,9 @@ Figure 1. The desgin of SPS
         - Simple: high level wrappers, you only need to focus on plotting code, no Shiny 
           development knowledge is required.
         - Full: full Shiny code, for advanced users, customize everything of the tab.
+    - Modularization: the whole app is built on top of Shiny modules, which gives it the 
+      flexibility to add new content without concerning conflicting of any existing 
+      content. Each "tab" on the dashboard is isolated with its own environment. 
 - [Canvas](https://systempipe.org/sps/canvas/): A workbench for interactive quick image editing
     - Communicates with all plot options on other tabs, take screenshots of them and 
       send to this tool for further image editing.
