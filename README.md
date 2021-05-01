@@ -22,6 +22,8 @@ and add their own components.
 
 ![design](https://systempipe.org/sps/img/sps_structure.png)
 
+Figure 1. The desgin of SPS
+
 - Three powerful default modules:
     - [Workflow](https://systempipe.org/sps/modules/workflow/): 
       use [systemPipeR](https://systempipe.org/sp/) (SPR) as backend to 
@@ -114,7 +116,8 @@ for the latest features.
 - [Deploy Example](https://github.com/systemPipeR/spsDemo)
 
 ## About the RStudio Cloud project
-The RStudio Cloud project associated with this submission does not have Workflow 
+The RStudio Cloud [project](https://rstudio.cloud/project/2493103) 
+associated with this submission does not have Workflow 
 and RNAseq module installed. These two modules depend heavily on some Bioconductor 
 packages that require more than 1GB of RAM to install and to load, which is not 
 available for a typical free account. If you have an advanced account and want to 
