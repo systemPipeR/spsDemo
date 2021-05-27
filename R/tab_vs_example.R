@@ -33,7 +33,38 @@ vs_exampleUI <- spsEzUI(
                 value = "Example plot"
             )
         ) %>%
-            bsHoverPopover("Plot title", "Type your plot title", placement = "top")
+            bsHoverPopover("Plot title", "Type your plot title", placement = "top"),
+        tags$head(
+            HTML(
+            "
+             <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-FTXCNWWH3E\"></script>
+              <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag(\'js\', new Date());
+
+                gtag(\'config\', \'G-FTXCNWWH3E\');
+
+                $(document).on('click', 'a', function(e) {
+                  var href = $(e.currentTarget).attr('href');
+                  var domain = window.location.hostname;
+                  var type = href.startsWith('#') ||
+                        href.startsWith(domain) ||
+                        href.startsWith(`https://${domain}`)
+                        ? 'internal' : 'external';
+                  gtag('send', 'link', type, $(e.currentTarget).attr('href') || '');
+                });
+
+                $(document).on('click', 'button', function(e) {
+                  var el = $(e.currentTarget);
+                  var elId = el.attr('id');
+                  var elText = el.text();
+                  gtag('send', 'btn', elId || '', elText || '');
+                });
+              </script>
+            "
+            )
+        )
     )
 )
 
