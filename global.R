@@ -7,7 +7,7 @@ library(systemPipeShiny)
 library(magrittr) # load pipes
 # load additional libraries that you want to use below
 ## Workflow module
-requireNamespace("DOT"); requireNamespace("networkD3"); requireNamespace("pushbar")
+requireNamespace("pushbar")
 requireNamespace("readr"); requireNamespace("rhandsontable"); requireNamespace("shinyTree")
 requireNamespace("systemPipeR"); requireNamespace("systemPipeRdata"); requireNamespace("zip")
 
