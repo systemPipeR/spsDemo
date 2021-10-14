@@ -20,13 +20,13 @@
 ##########################################################################
 ## Workflow module
 # requireNamespace("DOT"); requireNamespace("networkD3"); requireNamespace("pushbar")
-# requireNamespace("readr"); requireNamespace("rhandsontable"); requireNamespace("shinyTree")
+# requireNamespace("readr"); requireNamespace("rhandsontable")
 # requireNamespace("systemPipeR"); requireNamespace("systemPipeRdata"); requireNamespace("zip")
 # requireNamespace("callr")
 
 ## RNA-Seq module
 # requireNamespace("DESeq2"); requireNamespace("Rtsne"); requireNamespace("SummarizedExperiment")
-# requireNamespace("UpSetR"); requireNamespace("ape"); requireNamespace("ggtree")
+# requireNamespace("UpSetR"); requireNamespace("ape")
 # requireNamespace("glmpca"); requireNamespace("pheatmap"); requireNamespace("systemPipeR")
 
 ## Quick ggplot module

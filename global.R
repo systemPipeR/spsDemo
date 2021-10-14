@@ -8,12 +8,12 @@ library(magrittr) # load pipes
 # load additional libraries that you want to use below
 ## Workflow module
 requireNamespace("pushbar")
-requireNamespace("readr"); requireNamespace("rhandsontable"); requireNamespace("shinyTree")
+requireNamespace("readr"); requireNamespace("rhandsontable")
 requireNamespace("systemPipeR"); requireNamespace("systemPipeRdata"); requireNamespace("zip")
 
 ## RNA-Seq module
 requireNamespace("DESeq2"); requireNamespace("Rtsne"); requireNamespace("SummarizedExperiment")
-requireNamespace("UpSetR"); requireNamespace("ape"); requireNamespace("ggtree")
+requireNamespace("UpSetR"); requireNamespace("ape")
 requireNamespace("glmpca"); requireNamespace("pheatmap"); requireNamespace("systemPipeR")
 requireNamespace("callr")
 
@@ -37,7 +37,7 @@ requireNamespace("esquisse")
 # traceback: for expressions wrapped inside `spsComps::shinyCatch`, show full traceback if error? TRUE, FALSE
 # is_demo: useful if deploy the app as a demo - TRUE, FALSE
 # welcome_guide: enable the welcome guide which show you where is guide dropdown menu? - TRUE, FALSE
-options(sps = list(
+spsOption(.list = list(
     title = "systemPipeShiny",
     title_logo = "img/sps_small.png",
     mode = "server",
