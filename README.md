@@ -1,4 +1,4 @@
-# systemPipeShiny for Shiny Contest <img src="https://github.com/systemPipeR/systemPipeShiny-book/blob/master/img/sps.png?raw=true" align="right" height="139" />
+# systemPipeShiny for Shiny Contest <img src="https://github.com/systemPipeR/systemPipeR.github.io/blob/main/static/images/sps_small.png?raw=true" align="right" height="139" />
 
 This is the repository for Shiny Contest submission. This repository contains 
 code for the default deployment of systemPipeShiny. 
