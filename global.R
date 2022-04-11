@@ -7,7 +7,7 @@ library(systemPipeShiny)
 library(magrittr) # load pipes
 # load additional libraries that you want to use below
 ## Workflow module
-requireNamespace("pushbar")
+requireNamespace("pushbar"); requireNamespace("callr")
 requireNamespace("readr"); requireNamespace("rhandsontable")
 requireNamespace("systemPipeR"); requireNamespace("systemPipeRdata"); requireNamespace("zip")
 
@@ -15,28 +15,13 @@ requireNamespace("systemPipeR"); requireNamespace("systemPipeRdata"); requireNam
 requireNamespace("DESeq2"); requireNamespace("Rtsne"); requireNamespace("SummarizedExperiment")
 requireNamespace("UpSetR"); requireNamespace("ape")
 requireNamespace("glmpca"); requireNamespace("pheatmap"); requireNamespace("systemPipeR")
-requireNamespace("callr")
 
 ## Quick ggplot module
 requireNamespace("esquisse")
 
 
-## SPS options
+## SPS options to configure the app
 # read "https://systempipe.org/sps/adv_features/config/#app-options" for details
-# title: dashboard and website title - any string
-# title_logo: logo to display when dashboard is collapsed and on website tab - url of an image
-# mode: running mode - "local", "server"
-# warning_toast: some warning messages to check potential risks - TRUE, FALSE
-# login_screen: to show login screen? - TRUE, FALSE
-# login_theme: login screen themes, login_screen need be TRUE - "random"
-# use_crayon: Do you want colorful terminal messages? TRUE, FALSE
-# verbose: display some info during processing? - TRUE, FALSE
-# admin_url: admin_page query url - "admin"
-# note_url: User notification broadcast file url - http(s) address
-# tab_welcome -- module_wf: whether to load the corresponding tab or module? - TRUE, FALSE
-# traceback: for expressions wrapped inside `spsComps::shinyCatch`, show full traceback if error? TRUE, FALSE
-# is_demo: useful if deploy the app as a demo - TRUE, FALSE
-# welcome_guide: enable the welcome guide which show you where is guide dropdown menu? - TRUE, FALSE
 spsOption(.list = list(
     title = "systemPipeShiny",
     title_logo = "img/sps_small.png",
@@ -57,11 +42,11 @@ spsOption(.list = list(
     module_rnaseq = TRUE,
     module_ggplot = TRUE,
     traceback = FALSE,
-    is_demo = TRUE,
+    is_demo = F,
     welcome_guide = TRUE
 ))
 
-## An alternative is to comment above and use `spsOption` to overwrite single options, eg:
+## An alternative is to comment above and use `spsOption` to overwrite **single** options, eg:
 # spsOption("mode", "server")
 
 ## use `spsOptions` to check current settings
