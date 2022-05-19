@@ -42,7 +42,7 @@ spsOption(.list = list(
     module_rnaseq = TRUE,
     module_ggplot = TRUE,
     traceback = FALSE,
-    is_demo = F,
+    is_demo = T,
     welcome_guide = TRUE
 ))
 
