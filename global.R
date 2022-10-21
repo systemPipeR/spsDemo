@@ -1,7 +1,7 @@
 ## use shiny::runApp() in console or click right top button
 ## '>Run App' in Rstudio to start app,
 ## but do not write `shiny::runApp()` in script, type it in console
-
+# Last modification 2022-10-21
 time_start <- Sys.time()
 library(systemPipeShiny)
 library(magrittr) # load pipes
@@ -42,7 +42,7 @@ spsOption(.list = list(
     module_rnaseq = TRUE,
     module_ggplot = TRUE,
     traceback = FALSE,
-    is_demo = T,
+    is_demo = TRUE,
     welcome_guide = TRUE
 ))
 
